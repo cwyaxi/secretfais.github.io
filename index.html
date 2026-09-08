@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>secretfais</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 5C25 5 10 22 10 42c0 13 7 23 18 28l-2 20h48l-2-20c11-5 18-15 18-28C90 22 75 5 50 5z' fill='%238b0000'/><ellipse cx='35' cy='42' rx='10' ry='11' fill='%23000'/><ellipse cx='65' cy='42' rx='10' ry='11' fill='%23000'/><rect x='40' y='72' width='8' height='14' rx='2' fill='%23000'/><rect x='52' y='72' width='8' height='14' rx='2' fill='%23000'/></svg>"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="hell-bg">
+    <div class="glitch-bar glitch-bar-1"></div>
+    <div class="glitch-bar glitch-bar-2"></div>
+    <div class="glitch-bar glitch-bar-3"></div>
+    <div class="glitch-bar glitch-bar-4"></div>
+    <div class="glitch-bar glitch-bar-5"></div>
+    <div class="glitch-block glitch-block-1"></div>
+    <div class="glitch-block glitch-block-2"></div>
+    <div class="glitch-block glitch-block-3"></div>
+    <div class="glitch-block glitch-block-4"></div>
+    <svg class="hell-symbol hell-s1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,10 20,90 95,35 5,35 80,90" fill="none" stroke="#ff0033" stroke-width="2.5"/>
+    </svg>
+    <svg class="hell-symbol hell-s7" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,10 20,90 95,35 5,35 80,90" fill="none" stroke="#bb0000" stroke-width="2"/>
+    </svg>
+    <svg class="hell-symbol hell-s11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,10 20,90 95,35 5,35 80,90" fill="none" stroke="#dd0000" stroke-width="2"/>
+    </svg>
+    <svg class="hell-symbol hell-s15" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,10 20,90 95,35 5,35 80,90" fill="none" stroke="#880000" stroke-width="2.5"/>
+    </svg>
+    <svg class="hell-symbol hell-s19" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,10 20,90 95,35 5,35 80,90" fill="none" stroke="#aa0000" stroke-width="2"/>
+    </svg>
+    
+    <svg class="hell-symbol hell-s2" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+      <rect x="27" y="5" width="6" height="50" fill="#cc0000"/>
+      <rect x="5" y="27" width="50" height="6" fill="#cc0000"/>
+    </svg>
+    <svg class="hell-symbol hell-s4" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+      <rect x="27" y="5" width="6" height="50" fill="#aa0000"/>
+      <rect x="5" y="27" width="50" height="6" fill="#aa0000"/>
+    </svg>
+    <svg class="hell-symbol hell-s8" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+      <rect x="32" y="8" width="6" height="54" fill="#880000"/>
+      <rect x="8" y="32" width="54" height="6" fill="#880000"/>
+    </svg>
+    <svg class="hell-symbol hell-s12" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+      <rect x="27" y="5" width="6" height="50" fill="#990000"/>
+      <rect x="5" y="27" width="50" height="6" fill="#990000"/>
+    </svg>
+    <svg class="hell-symbol hell-s16" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+      <rect x="27" y="5" width="6" height="50" fill="#bb0000"/>
+      <rect x="5" y="27" width="50" height="6" fill="#bb0000"/>
+    </svg>
+    
+    <svg class="hell-symbol hell-s3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,10 20,90 95,35 5,35 80,90" fill="none" stroke="#990000" stroke-width="2.5"/>
+    </svg>
+    <svg class="hell-symbol hell-s6" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="40" cy="40" r="30" fill="none" stroke="#ff0033" stroke-width="2" stroke-dasharray="5,3"/>
+      <polygon points="40,15 30,55 65,28 15,28 50,55" fill="none" stroke="#ff0033" stroke-width="2"/>
+    </svg>
+    <svg class="hell-symbol hell-s9" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="45" cy="45" r="35" fill="none" stroke="#cc0000" stroke-width="2" stroke-dasharray="8,4"/>
+    </svg>
+    <svg class="hell-symbol hell-s13" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="40" cy="40" r="30" fill="none" stroke="#aa0000" stroke-width="2" stroke-dasharray="6,3"/>
+    </svg>
+    <svg class="hell-symbol hell-s17" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="45" cy="45" r="35" fill="none" stroke="#990000" stroke-width="2" stroke-dasharray="7,4"/>
+    </svg>
+    
+    <svg class="hell-symbol hell-s5" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 20 L35 18 M10 8 Q20 5 30 10 M15 32 Q20 35 28 30" stroke="#bb0000" stroke-width="2.5" fill="none"/>
+    </svg>
+    <svg class="hell-symbol hell-s10" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 25 L40 23 M15 10 L35 12 M15 40 L35 38" stroke="#990000" stroke-width="2.5" fill="none"/>
+    </svg>
+    <svg class="hell-symbol hell-s14" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 22 L42 25 M12 8 L38 10 M10 38 L40 40" stroke="#cc0000" stroke-width="2" fill="none"/>
+    </svg>
+    <svg class="hell-symbol hell-s18" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 18 L34 20 M8 6 Q20 4 32 8 M10 34 Q20 38 30 32" stroke="#880000" stroke-width="2.5" fill="none"/>
+    </svg>
+    <svg class="hell-symbol hell-s20" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 28 L45 26 M10 12 L40 14 M8 42 L42 40" stroke="#aa0000" stroke-width="2" fill="none"/>
+    </svg>
+    
+    <div class="hell-text hell-t1">6 6 6</div>
+    <div class="hell-text hell-t2">X X X</div>
+    <div class="hell-text hell-t3">† † †</div>
+    <div class="hell-text hell-t4">+ + +</div>
+    <div class="hell-text hell-t5">* * *</div>
+    <div class="hell-text hell-t6">6 6 6</div>
+    <div class="hell-text hell-t7">X X X</div>
+    <div class="hell-text hell-t8">† † †</div>
+    <div class="hell-text hell-t9">+ + +</div>
+    <div class="hell-text hell-t10">* * *</div>
+  </div>
+
+  <div id="cursor">
+    <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 2 L17 10 L25 12 L17 14 L20 24 L14 18 L8 24 L11 14 L3 12 L11 10 Z" fill="#ff0033" stroke="#660000" stroke-width=".6"/>
+    </svg>
+  </div>
+  <div id="cursor-dot"></div>
+
+  <div id="blood-drops-container"></div>
+
+  <div id="intro">
+    <div class="intro-scanlines"></div>
+    <h1 class="intro-title" data-text="secretfais">secretfais</h1>
+    <p class="intro-prompt">— нажми чтобы войти —</p>
+    <div class="intro-spikes"></div>
+  </div>
+
+  <div id="site" class="site-hidden">
+    <div class="center-wrap">
+      <div class="penta-area">
+        <svg class="penta" id="penta-svg" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="pg" x="-25%" y="-25%" width="150%" height="150%">
+              <feGaussianBlur stdDeviation="3" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <polygon points="130,12 50,210 248,80 12,80 210,210" fill="none" stroke="#ff0033" stroke-width="1.4" filter="url(#pg)" opacity=".55"/>
+          <circle cx="130" cy="130" r="118" fill="none" stroke="#660000" stroke-width=".9" stroke-dasharray="7,5" opacity=".4"/>
+        </svg>
+        <h2 class="penta-nick" data-text="secretfais">secretfais</h2>
+      </div>
+
+      <nav class="socials">
+        <a href="https://t.me/" target="_blank" class="soc-btn tg-btn">
+          <svg class="soc-ico" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <defs><filter id="tgf" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+            <circle cx="26" cy="26" r="24" fill="#0a0000" stroke="#660000" stroke-width="1.5"/>
+            <path d="M26 2 Q26 8 26 12" stroke="#880000" stroke-width="2" fill="none"/>
+            <ellipse cx="26" cy="13" rx="2.5" ry="3.5" fill="#cc0000"/>
+            <path d="M10 24 L17 27 L20 37 L25 30 L35 37 L40 14 Z" fill="none" stroke="#cc0000" stroke-width="2" stroke-linejoin="round" filter="url(#tgf)"/>
+          </svg>
+          <div class="drip"></div>
+        </a>
+
+        <a href="https://soundcloud.com/" target="_blank" class="soc-btn sc-btn">
+          <svg class="soc-ico" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <defs><filter id="scf" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+            <circle cx="26" cy="26" r="24" fill="#0a0000" stroke="#660000" stroke-width="1.5"/>
+            <path d="M16 2 Q16 8 16 12" stroke="#880000" stroke-width="2" fill="none"/>
+            <ellipse cx="16" cy="13" rx="2.5" ry="3.5" fill="#cc0000"/>
+            <path d="M36 2 Q36 8 36 12" stroke="#880000" stroke-width="2" fill="none"/>
+            <ellipse cx="36" cy="13" rx="2.5" ry="3.5" fill="#cc0000"/>
+            <path d="M8 30 Q11 20 15 30 Q17 34 19 28 Q21 22 23 28 Q25 24 27 28 Q29 20 31 28 L31 34 L8 34Z" fill="#cc0000" filter="url(#scf)"/>
+            <path d="M20 24 C20 18 30 16 32 22 C34 18 40 18 40 24 C42 24 44 26 44 28 C44 30 42 32 40 32 L20 32 C16 32 14 28 16 26Z" fill="#990000" stroke="#cc0000" stroke-width=".5"/>
+          </svg>
+          <div class="drip"></div>
+        </a>
+
+        <a href="https://www.tiktok.com/" target="_blank" class="soc-btn tt-btn">
+          <svg class="soc-ico" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <defs><filter id="ttf" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+            <circle cx="26" cy="26" r="24" fill="#0a0000" stroke="#660000" stroke-width="1.5"/>
+            <path d="M26 50 Q26 44 26 40" stroke="#880000" stroke-width="2" fill="none"/>
+            <ellipse cx="26" cy="39" rx="2.5" ry="3.5" fill="#cc0000"/>
+            <path d="M32 12 C32 12 35 15 38 15 L38 20 C38 20 35 20 32 18 L32 30 C32 36 28 40 24 38 C20 36 19 31 22 28 C25 25 29 27 29 27 L29 22 C29 22 22 19 18 24 C14 29 16 37 21 40 C26 43 34 41 36 35 L36 20" stroke="#cc0000" stroke-width="2.2" fill="none" stroke-linecap="round" filter="url(#ttf)"/>
+          </svg>
+          <div class="drip"></div>
+        </a>
+      </nav>
+
+      <div class="player">
+        <svg class="player-note" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg">
+          <defs><filter id="nf" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+          <line x1="26" y1="4"  x2="26" y2="28" stroke="#cc0000" stroke-width="2.5" stroke-linecap="round" filter="url(#nf)"/>
+          <path d="M26 4 L13 8 L13 17 L26 13Z" fill="#cc0000" filter="url(#nf)"/>
+          <ellipse cx="18" cy="32" rx="7" ry="5" fill="#990000" transform="rotate(-14 18 32)" filter="url(#nf)"/>
+          <path d="M12 32 Q11 38 12 42" stroke="#770000" stroke-width="1.5" fill="none"/>
+          <ellipse cx="12" cy="43" rx="2" ry="3" fill="#550000"/>
+        </svg>
+        <div class="player-info">
+          <div class="track-name">Я нож воткну</div>
+          <div class="eq-bars" id="eq-bars">
+            <span class="bar"></span><span class="bar"></span>
+            <span class="bar"></span><span class="bar"></span>
+            <span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+        <button class="play-btn" id="music-toggle">
+          <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="13" fill="none" stroke="#ff0033" stroke-width="1.5"/>
+            <path id="play-icon" d="M11 8 L11 22 L23 15 Z" fill="#ff0033"/>
+          </svg>
+        </button>
+        <audio id="bg-music" loop><source src="music.mp3" type="audio/mpeg"/></audio>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
